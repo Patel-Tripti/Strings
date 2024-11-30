@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 = prompt("enter a string for check pallindrom");
+        let rev ="";
+        for(let i = (str1.length-1);i>=0;i--){
+         rev = rev+str1.charAt(i);
+        }
+        document.write(rev);
+        
+        if((str1.toLowerCase())=== (rev.toLowerCase())){
+           document.write(`<br > string is pallindrom`)
+        }else{
+            document.write(`<br > string is not pallindrom`)
+        }
+    </script>
+</body>
+</html>

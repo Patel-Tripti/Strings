@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function stringRotateCheck() {
+    let str="ohell";  // here we can't take user input without help of node.js
+    let x = stringRotate("hello");
+
+    if (str === x) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+}
+
+function stringRotate(str) {
+    let n = 1;
+    console.log("Original String: " + str);
+    let len = str.length;
+    n = n % len;
+    return str.substring(len - n) + str.substring(0, len - n);
+}
+
+stringRotateCheck();
+    </script>
+</body>
+</html>
